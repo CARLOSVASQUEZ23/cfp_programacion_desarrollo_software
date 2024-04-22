@@ -1,4 +1,4 @@
-## [Ejercicios de 71-80](/.71-80/)
+## [Ejercicios de 71-80](./71-80/)
 
 71. Factorial:
 Define una función recursiva para calcular el factorial de un número entero positivo ( n ).
