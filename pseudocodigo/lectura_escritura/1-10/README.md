@@ -48,7 +48,7 @@
     		Leer numero2
     		escribir "Ingrese el tercer número"
     		Leer numero3
-    		Escribir "El promedio de los tres números es: ", numero1 + numero2 + numero3 / 3
+    		Escribir "El promedio de los tres números es: ", numero1 + numero2 + numero3 / 3;
 		FinAlgoritmo
 	</code>
 </pre>
