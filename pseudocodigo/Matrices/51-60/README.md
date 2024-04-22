@@ -350,34 +350,66 @@
 
 
 <h2>Ejercicio 57</h2>
-<h3>Juego de la vida</h3>
+<h3>Buscaminas</h3>
 <pre>
     <code>
-    Algoritmo  Juego_de_la_Vida
-        Definir array, OP, ingreso Como Entero
-        Dimension array[3,3]
-        Repetir
-            // mostrar el array
-            para i = 1 Hasta 3 Con Paso 1 Hacer
-                para j = 1 Hasta 3 Con Paso 1 Hacer
-                    Escribir array[i,j] " " Sin Saltar
+    Algoritmo busca_minas
+        Definir cantidad_minas, contador, posicion, posicion_minas Como Entero
+        Definir mapa Como Caracter
+        Definir rudynoe Como Logico
+        Dimension mapa[10,10], posicion_minas[5]
+            //genero un numero
+        cantidad_minas = Aleatorio(3,5)
+            //Mostrar el mapa de minas
+            para fila = 1 Hasta 10 Con Paso 1 Hacer
+                Para columna = 1 hasta 10 Con Paso 1 Hacer
+                    mapa[fila,columna] = "0"
+                    //Escribir mapa[fila, columna] "  " Sin Saltar
                 FinPara
-                Escribir " "
+                //Escribir ""
             FinPara
-            //Pedir al usuario que ingrese una cantidad
-            escribir "¿Qué espacio deseas llenar?"
-            Leer ingreso
-            //Crear un contador para que recorra cada una de las celdas
-            contador = 0
-            para i = 1 Hasta 3 Con Paso 1 Hacer
-                para j = 1 Hasta 3 con paso 1 Hacer
-                    contador = contador + 1
-                    si ingreso = contador Entonces
-                        array[i,j] <- 1
-                    FinSi
+            //colocacion de minas con mi rudy lindo uwu
+            Para mina = 1 Hasta cantidad_minas Hacer
+                fila_aleatoria = Aleatorio(1,10)
+                columna_aleatoria = Aleatorio(1,10)
+                mapa[fila_aleatoria,columna_aleatoria]  = "7" 
+            FinPara
+            //Mostrar el mapa de minas
+            para fila = 1 Hasta 10 Con Paso 1 Hacer
+                Para columna = 1 hasta 10 Con Paso 1 Hacer
+                    Escribir mapa[fila, columna] "  " Sin Saltar
                 FinPara
+                Escribir ""
             FinPara
-        Hasta Que ingreso = 10
+            Repetir
+                //pedir que ingrese la posicion en el mapa
+                Escribir "¿Qué posición deseas revelar? (rango de 1-100)"
+                Leer posicion
+                contador = 0
+                para fila = 1 Hasta 10 Con Paso 1 Hacer
+                    Para columna = 1 hasta 10 Con Paso 1 Hacer
+                        contador = contador + 1
+                        si contador = posicion Entonces
+                            si mapa[fila,columna] = "7" Entonces
+                                rudynoe = Verdadero
+                            SiNo
+                                mapa[fila,columna] = " "
+                            FinSi
+                        FinSi
+                    FinPara
+                FinPara
+                //Mostrar el mapa de minas
+                para fila = 1 Hasta 10 Con Paso 1 Hacer
+                    Para columna = 1 hasta 10 Con Paso 1 Hacer
+                        Escribir mapa[fila, columna] "  " Sin Saltar
+                    FinPara
+                    Escribir ""
+                FinPara
+            Hasta Que rudynoe = Verdadero
+            Si rudynoe Entonces
+                Limpiar Pantalla
+                Escribir "boom!"
+            FinSi
     FinAlgoritmo
     </code>
 </pre>
@@ -597,84 +629,79 @@
 <h3>Sudoku Solver</h3>
 <pre>
     <code>
-    Algoritmo sudoku_game
-        Definir  sudoku, contador Como Entero
+    Algoritmo sudoku_bien
+        Definir  sudoku Como Entero
         Definir existe Como Logico
         Dimension sudoku[9,9]
-        para f = 1 Hasta 9 Con Paso 1 Hacer
-            para c = 1 Hasta 9 con paso 1 Hacer
-                si sudoku[f,c] = 0 Entonces
+        Para f = 1 Hasta 9 Con Paso 1 Hacer
+            para c = 1 Hasta 9 Con Paso 1 Hacer
+                Para num = 1 Hasta 9 Con Paso 1 Hacer
                     existe = Falso
-                    para num = 1 Hasta 9 Con Paso 1 Hacer
-                        para vc = 1 hasta 9 Con Paso 1 Hacer
-                            si sudoku[f,vc] = num Entonces
+                    Repetir
+                        para vc = 1 Hasta 9 Con Paso 1 Hacer
+                            si num == sudoku[f,vc] Entonces
                                 existe = Verdadero
+                                vc = 9
                             FinSi
                         FinPara
-                        para vf = 1 Hasta 9 Con Paso 1 Hacer
-                            si sudoku[vf,c] = num entonces
+                        para vf = 1 hasta 9 Con Paso 1 Hacer
+                            si num == sudoku[vf,c] Entonces
                                 existe = Verdadero
-                            Finsi
+                                vf = 9
+                            FinSi
                         FinPara
-                        // Verificar si el número ya existe en el bloque 3x3
-                        //inicioFila <- ((f - 1) / 3) * 3 + 1
-                        //inicioColumna <- ((c - 1) / 3) * 3 + 1
-                        //Escribir inicioColumna
                         si f >= 1 y f <= 3 Entonces
-                            inicioFila = 1
+                            inicio_fila = 1
                         SiNo
-                            Si f >= 4 y f <= 6 Entonces
-                                inicioFila = 4
+                            si f >= 4 y f <= 6 Entonces
+                                inicio_fila = 4
                             SiNo
-                                inicioFila = 7
+                                inicio_fila = 7
                             FinSi
                         FinSi
                         si c >= 1 y c <= 3 Entonces
-                            inicioColumna = 1
+                            inicio_columna = 1
                         SiNo
-                            Si c >= 4 y c <= 6 Entonces
-                                inicioColumna = 4
+                            si c >= 4 y c <= 6 Entonces
+                                inicio_columna = 4
                             SiNo
-                                inicioColumna = 7
+                                inicio_columna = 7
                             FinSi
                         FinSi
-                        Para i <- inicioFila Hasta inicioFila + 2 Hacer
-                            Para j <- inicioColumna Hasta inicioColumna + 2 Hacer
-                                Si sudoku[i, j] = num entonces
+                        para i = inicio_fila Hasta inicio_fila + 2 Con Paso 1 Hacer
+                            Para j = inicio_columna Hasta inicio_columna +2 Con Paso 1 Hacer
+                                si num == sudoku[i,j] Entonces
                                     existe = Verdadero
+                                    i = inicio_fila + 2
+                                    j = inicio_columna + 2
                                 FinSi
                             FinPara
                         FinPara
-                        Si existe == Falso Entonces
-                            sudoku[f, c] = num
+                        si existe == Falso Entonces
+                            sudoku[f,c] = num
                             num = 9
-                        SiNo
-                            existe = Falso
                         FinSi
-                    FinPara
+                    Hasta Que existe == Verdadero 
+                FinPara
+                si sudoku[f,c] == 0 Entonces
+                    f = 1
+                    c = 1
                 FinSi
             FinPara
         FinPara
-        //trabjar solo en una seccion
-        //para f = 1 Hasta 9 Con Paso 1 Hacer
-        //para c = 1 Hasta 9 Con Paso 1 Hacer
-        //FinPara
-        //FinPara
-        //generar y graficar la tabla
-        para i = 1 Hasta 9 con paso 1 Hacer
-            para j = 1 hasta 9 Con Paso 1 Hacer
+        Para i = 1 Hasta 9 Con Paso 1 Hacer
+            Para j = 1 Hasta 9 Con Paso 1 Hacer
                 si j <> 3 y j <> 6 Entonces
-                    separador = " "
+                    Escribir sudoku[i,j], " " Sin Saltar
                 SiNo
-                    separador = "|"
+                    Escribir sudoku[i,j], "|" Sin Saltar
                 FinSi
-                Escribir sudoku[i,j], separador Sin Saltar
             FinPara
-            Escribir " "
-            si i = 3 o i = 6 Entonces
-                Escribir "- - -|- - -|- - -"
+            Si i == 6 o i  == 3 Entonces
+                Escribir " "
             FinSi
-        FinPara
+            Escribir ""
+        Fin Para
     FinAlgoritmo
     </code>
 </pre>
