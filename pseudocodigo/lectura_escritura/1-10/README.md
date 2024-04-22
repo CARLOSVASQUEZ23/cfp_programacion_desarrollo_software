@@ -1,5 +1,5 @@
-<h2>Ejercicio 1 </h2>
-<h3>Calculadora simple: </h3>
+<h2>Ejercicio 1</h2>
+<h3>Calculadora simple</h3>
 <pre>
     <code>
 		Algoritmo calculadora_simple
@@ -18,8 +18,8 @@
 <br>
 
 
-<h2>Ejercicio 2  </h2>
-<h3>Area y perimetro de un rectangulo: </h3>
+<h2>Ejercicio 2</h2>
+<h3>Area y perimetro de un rectangulo</h3>
 <pre>
     <code>
 		Algoritmo ejercicio_2
@@ -37,7 +37,7 @@
 
 
 <h2>Ejercicio 3  </h2>
-<h3>Promedio de Tres Números: </h3>
+<h3>Promedio de Tres Números</h3>
 <pre>
     <code>
 		Algoritmo ejercicio_3
@@ -55,8 +55,8 @@
 <br>
 
 
-<h2>Ejercicio 4  </h2>
-<h3>Conversión de Temperatura: </h3>
+<h2>Ejercicio 4</h2>
+<h3>Conversión de Temperatura</h3>
 <pre>
     <code>
 		Algoritmo conversion_temperatura
@@ -70,8 +70,8 @@
 <br>
 
 
-<h2>Ejercicio 5  </h2>
-<h3>Edad en Días: </h3>
+<h2>Ejercicio 5</h2>
+<h3>Edad en Días</h3>
 <pre>
     <code>
 		Algoritmo Edad_dias
@@ -85,8 +85,8 @@
 <br>
 
 
-<h2>Ejercicio 6  </h2>
-<h3>Costo de Llamada Telefónica: </h3>
+<h2>Ejercicio 6</h2>
+<h3>Costo de Llamada Telefónica</h3>
 <pre>
     <code>
 		Algoritmo Rango_de_números
@@ -99,15 +99,14 @@
 			sino Entonces
 				Escribir "Estás en el rango"
 			FinSi
-			
 		FinAlgoritmo
 	</code>
 </pre>
 <br>
 
 
-<h2>Ejercicio 7  </h2>
-<h3>Cálculo de Descuento: </h3>
+<h2>Ejercicio 7</h2>
+<h3>Cálculo de Descuento</h3>
 <pre>
 	<code>
 		Algoritmo Calculo_descuento
@@ -121,8 +120,8 @@
 </pre>
 <br>
 
-<h2>Ejercicio 8  </h2>
-<h3>Dias a segundos: </h3>
+<h2>Ejercicio 8</h2>
+<h3>Dias a segundos</h3>
 <pre>
     <code>
 		Algoritmo Dias_a_segundos
@@ -136,8 +135,8 @@
 <br>
 
 
-<h2>Ejercicio 9  </h2>
-<h3>Circunferencia y Área del Círculo: </h3>
+<h2>Ejercicio 9</h2>
+<h3>Circunferencia y Área del Círculo</h3>
 <pre>
     <code>
 		Algoritmo área_circulo
@@ -151,8 +150,8 @@
 <br>
 
 
-<h2>Ejercicio 10  </h2>
-<h3> Minutos a Horas y Minutos:  </h3>
+<h2>Ejercicio 10</h2>
+<h3> Minutos a Horas y Minutos</h3>
 <pre>
     <code>
 		Algoritmo minutos_a_horas
