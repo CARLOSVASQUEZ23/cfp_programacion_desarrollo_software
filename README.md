@@ -4,5 +4,7 @@
 ## [Condiciones](./pseudocodigo/condiciones)
 ## [Mientras_y_repetir](./pseudocodigo/Mientras_y_repetir)
 ## [Bucles_para](./pseudocodigo/Bucles_para)
+## [Vectores](./pseudocodigo/Vectores)
+
 
 
