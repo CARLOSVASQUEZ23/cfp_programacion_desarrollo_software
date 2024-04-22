@@ -28,8 +28,8 @@
 			Leer base
 			Escribir "Ingresa la altura"
 			leer altura
-			escribir "el área de tu rectangulo es: ", base * altura
-			escribir "El perímetro de tu rectángulo es: ", base + altura * 2
+			escribir "el área de tu rectangulo es: ", (base * altura)
+			escribir "El perímetro de tu rectángulo es: ", ((base + altura) * 2)
 		FinAlgoritmo
 	</code>
 </pre>
@@ -63,7 +63,7 @@
 			Definir grados Como Real
 			escribir "Ingresa los grados CELSIUS: "
 			Leer grados
-			escribir "Los " grados " grados" " celsius son ", grados *(9/5) +32 " Grados Fahrenheit"	
+			escribir "Los ", grados, " grados", " celsius son ", (grados *(9/5) +32), " Grados Fahrenheit"	
 		FinAlgoritmo
 	</code>
 </pre>
@@ -78,7 +78,7 @@
 			Definir edad Como Entero
 			Escribir "Ingresa tu edad"
 			Leer edad
-			Escribir "Has vivido ", edad * 365 " dias hasta ahora" 
+			Escribir "Has vivido ", (edad * 365), " dias hasta ahora" 
 		FinAlgoritmo
 	</code>
 </pre>
@@ -93,15 +93,13 @@
 			Definir medida Como Real
 			Escribir "Ingresa un número: "
 			Leer medida
-			si medida <= 0 Entonces
+			si medida <= 0 o >10 Entonces
 				Escribir "Estás fuera del rango"
 			FinSi
-			si medida >= 1 y medida <= 10 Entonces
+			sino Entonces
 				Escribir "Estás en el rango"
 			FinSi
-			si medida > 10 Entonces
-				Escribir "Estás fuera del rango"
-			FinSi
+			
 		FinAlgoritmo
 	</code>
 </pre>
