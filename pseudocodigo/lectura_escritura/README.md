@@ -21,4 +21,4 @@ segundos. Mostrar el resultado.
 9. Circunferencia y Área del Círculo: Solicitar al usuario el radio de un círculo,
 calcular e imprimir la circunferencia y el área.
 10. Minutos a Horas y Minutos: Leer un número de minutos y convertirlo a
-horas y minutos. Mostrar el resultado.
+horas y minutos. Mostrar el resultado..

@@ -160,7 +160,7 @@
 			Escribir "Ingresar los minutos que deseas convertir: "
 			Leer time
 			Escribir "los " time " minutos son:", time / 60 " horas"
-		FinAlgoritmo
+		FinAlgoritmo.
 	</code>
 </pre>
 <br>
