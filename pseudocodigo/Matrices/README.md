@@ -23,11 +23,7 @@ celda de salida del laberinto, evitando las paredes. Puedes utilizar un enfoque 
 de profundidad o de búsqueda de anchura para resolver este problema. Una vez
 encontrado el camino, muestra la matriz del laberinto con el camino marcado y la ruta
 tomada por el algoritmo.
-57. Juego de la Vida (Conway's Game of Life):
-Implementa el Juego de la Vida de Conway utilizando una matriz bidimensional. Las células
-pueden estar vivas (1) o muertas (0), y evolucionan según ciertas reglas. Crea un programa
-que simule múltiples generaciones del juego y muestre la evolución de las células en el
-tablero.
+57. Buscaminas: Crea un buscaminas como el de windows.
 58. Laberinto con Obstáculos y Algoritmo de Búsqueda:
 Amplía el ejercicio del laberinto agregando obstáculos (celdas bloqueadas) al laberinto.
 Implementa un algoritmo de búsqueda, como A* o Dijkstra, para encontrar el camino más
