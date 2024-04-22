@@ -17,10 +17,9 @@ obtenido.
 27. Suma de Números Pares: Pide al usuario que ingrese números. Suma solo los
 números pares y repite el proceso mientras el usuario desee continuar ingresando
 números.
-28. Adivina el Número (Repetir Hasta Acertar): Genera un número aleatorio entre 1 y
-29. Pide al usuario que adivine el número y repite el proceso hasta que adivine
+28. Adivina el Número (Repetir Hasta Acertar): Genera un número aleatorio entre 1 y 2. Pide al usuario que adivine el número y repite el proceso hasta que adivine
 correctamente. Muestra el número de intentos al final.
-30. Cálculo de Factorial: Solicita al usuario que ingrese un número entero no negativo.
+29. Cálculo de Factorial: Solicita al usuario que ingrese un número entero no negativo.
 Para calcular el factorial de ese número.
 30. Validación de Entrada: Pide al usuario que ingrese una contraseña. Repite el
 proceso mientras la longitud de la contraseña sea menor que 8 caracteres. Al final,
