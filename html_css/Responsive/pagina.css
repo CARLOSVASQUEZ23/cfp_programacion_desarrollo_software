@@ -2,15 +2,31 @@ header{
     color: white;
     background-color: black;
 }
-.menu{
+
+nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1em;
 }
 
 .logo{
     width: 45px;
     height: 45px;
+}
+
+.primera{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.segunda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .bosco{
