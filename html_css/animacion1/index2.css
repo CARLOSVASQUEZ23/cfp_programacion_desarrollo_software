@@ -1,0 +1,92 @@
+*{
+    background-color: antiquewhite;
+    margin: 0;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cara{
+    border-radius: 50%;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.recipiente_ojos{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+
+.ojo{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    animation: ojitos 6s infinite;
+}
+
+/*--------------------------*/
+
+@keyframes ojitos {
+    0%{
+        border-radius: 50%;
+        transform: translate(0px);
+        width: 40px;
+        height: 40px;
+    }
+
+    20%, 30%{
+        border-radius: 40%;
+        border-top: 50%;
+        border-bottom: 50%;
+        transform: translate(10px,20px);
+        width: 30px;
+        height: 50px;
+    }
+
+    40%{
+        border-top: 50%;
+        border-bottom: 50%;
+        transform: translate(45px,-10px);
+        width: 40px;
+        height: 40px;
+    }
+
+    60%{
+        border-top: 50%;
+        border-bottom: 50%;
+        transform: translate(0px,0px);
+        width: 40px;
+        height: 40px;
+    }
+
+    80%{
+        border-top: 50%;
+        border-bottom: 50%;
+        transform: translate(0px,0px);
+        width: 40px;
+        height: 10px;
+    }
+
+    100%{
+        border-radius: 50%;
+        transform: translate(0px);
+        width: 40px;
+        height: 40px;
+    }
+
+
+}
