@@ -1,0 +1,50 @@
+.button{
+        font-size: 1em;
+        background-color: #113946;
+        color: white;
+        border: 0px solid;
+        border-radius: 4px;
+        height: 40px;
+        width: 80px;
+        margin: 10px;
+}
+
+.informacion{
+        text-align: center;
+}
+
+.lado1 {
+        display: inline-block;
+        text-align: right;
+        width: 40%;
+        padding: 5px;
+        margin-top: 10px;
+}
+
+.lado2 {
+        display: inline-block;
+        text-align: left;
+        width: 48%;
+}
+
+.diseno{
+        margin: auto;
+        width: 800px;
+        background-color: #ead7bb;
+        border-radius: 10px;
+        padding: 20px 10px 10px 10px;
+}
+
+h1{
+        background-color: #BCA37F;
+        text-align: center;
+        border-radius: 10px;
+}
+
+body{
+        background-color: #FFF2D8;
+}
+
+fieldset{
+        border: none;
+}

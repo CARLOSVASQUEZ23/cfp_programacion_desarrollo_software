@@ -1,0 +1,41 @@
+.logo {
+    width: 15%;
+}
+
+.micro {
+    width: 5%;
+    height: 5%;
+}
+
+.pequenos {
+    width: 40px;
+    height: 40px;
+}
+
+.chica {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+}
+
+.menubusqueda{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.otros{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    list-style: none;
+}

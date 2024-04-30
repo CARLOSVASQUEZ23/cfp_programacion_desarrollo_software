@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <header>
+        <!--menu-->
+        <h1>Formulario Básico</h1>
+
+    </header>
+    <main>
+        <form class="diseno">
+            <div>
+                <section class="informacion">
+                    <p>¿Estás buscando trabajo?</p>
+                    <p>¿Quieres ser exitoso como Profe Noe?</p>
+                    <p>🎈🎈¡¡Forma parte de la familia SAT!!🎈🎈</p>
+                </section>
+
+                <fieldset>
+                    <div class="color">
+                        <label class="lado1" for="nombre">Nombre</label>
+                        <input class="lado2" type="text" placeholder="Escribe tu nombre completo" name="nombre"
+                            id="user_name" size="25"><br><br>
+                    </div>
+
+                    <div>
+                        <label class="lado1" for="correo">Correo Electrónico</label>
+                        <input class="lado2" type="email" placeholder="Escribe tu correo" name="correo"
+                            id="user_email"><br><br>
+                    </div>
+
+                    <div>
+                        <label class="lado1" for="goodday">¿Qué edad tienes?</label>
+                        <input class="lado2" type="number" name="goodday" id="uder_day"><br><br>
+                    </div>
+
+                    <div>
+                        <label class="lado1" for="donde">¿Qué haces alctualmente?</label>
+                        <select class="lado2" name="donde" id="user_where">
+                            <option value="donde_valor"></option>
+                            <option value="donde_valor">Estudiante</option>
+                            <option value="donde_valor">Trabajor/a</option>
+                            <option value="donde_valor">Desempleado</option>
+                            <option value="donde_valor">Other</option>
+                        </select><br><br>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <label class="lado1" for="time">¿Qué horario prefieres?</label>
+                        <ul class="lado2">
+                            <ol><input type="radio" name="tiempo">Mañana</ol>
+                            <ol><input type="radio" name="tiempo">Tarde</ol>
+                            <ol><input type="radio" name="tiempo">Noche</ol>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <label class="lado1" for="emociones">¿Qué puesto deseas aplicar?</label>
+                        <ul class="lado2">
+                            <ol><input type="checkbox" name="feel">Jefe</ol>
+                            <ol><input type="checkbox" name="feel">Encargado</ol>
+                            <ol><input type="checkbox" name="feel">Gerente</ol>
+                            <ol><input type="checkbox" name="feel">Practicante</ol>
+                        </ul>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <div>
+                        <label class="lado1" for="describir">Describe tu motivo para formar parte de nuestra
+                            familia.</label>
+                        <textarea class="lado2" name="describir" id="describir_usuario" cols="30" rows="5"></textarea>
+                    </div><br>
+
+                    <div>
+                        <label class="lado1" for="curriculum">Dejanos tu CV</label>
+                        <input class="lado2" type="file" name="curriculum" id="cv_usuario">
+                    </div>
+                </fieldset>
+
+                <button class="button" id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
