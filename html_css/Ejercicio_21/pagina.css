@@ -34,6 +34,10 @@ nav{
     gap: 10px;
 }
 
+.menu{
+    display: none;
+}
+
 .btn{
     color: white;
     border: 1px solid white;
@@ -118,11 +122,29 @@ main{
  /* Responsive*/
  
  @media screen and (max-width: 767px) {
+    
+    .primera, .segunda{
+        position: relative;
+    }
+
+
+    .segunda, label, input, select, button{
+        position: absolute;
+        z-index: -1;
+    }
+
+
+    .menu{
+        display: block;
+    }
+
+
     .informacion{
         display: flex;
         flex-direction: column;
         gap: 1rem;
     }
+    
 
     .cuadros{
         display: flex;
@@ -138,5 +160,16 @@ main{
 
 
  }
+
+ /* @media screen and ( min-width: 767px ) and (max-width: 1023px) {
+    .primera{
+        position: absolute;
+        z-index: -1;
+    }
+    .segunda{
+        position: absolute;
+        z-index: -1;
+    }
+ } */
 
 
