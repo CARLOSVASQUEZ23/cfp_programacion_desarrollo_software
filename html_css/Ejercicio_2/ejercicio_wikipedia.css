@@ -1,0 +1,36 @@
+body{
+    background-color: #F2EFE5;
+}
+
+h1{
+    text-align: center;
+    background-color: #b4b4b8;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.imagen{
+    height: 10%;
+    width: 25%;
+}
+
+.todo{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+.tabla{
+    text-align: center;
+    background-color: #c7c8cc;
+
+}

@@ -1,0 +1,45 @@
+body{
+    background-color: #D7E4C0;
+}
+
+h1{
+    color: #265073;
+    background-color: #F1FADA;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.imagen{
+    width: 25%;
+    right: 20%;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+
+main{
+    display: flex;
+    flex-direction: row;
+    background-color: #9AD0C2;
+}
+
+
+.texto{
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+}
+
+.lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #F1FADA;
+}
+
+.titulo_linea_tiempo{
+    width: 100%;
+    text-align: center;
+    color: #265073;
+}
