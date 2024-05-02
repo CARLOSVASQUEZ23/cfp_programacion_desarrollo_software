@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.PrimerContenedor{
+    display:flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 400px;
+    height: 50px;
+}
+
+.despegar{
+    width: 60%;
+    height: 100%;
+}
+
+li{
+    list-style-type: none; 
+}
+
+
+.UserSesion, ul, li{
+    display: flex;
+    margin: 3px;
+}
+
+.lista1{
+    background-color: white;
+    align-items: center;
+    background-color: #EEE;
+    border-bottom-left-radius: 24px;
+    padding: 0px 24px;
+}
+
+.lista2{
+    padding: 4px;
+
+}
+
+
+.menubajo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*main*/
+main{
+    background-color: #A67FFE;
+    padding: 15px;
+}
+
+
+.opcionesviaje{
+    display: flex;
+    gap: 5px;
+}
+
+.cuerpoformulario{
+    background-color: #270570;
+    border-radius: 24px;
+    padding: 15px;
+}
+
+form{
+    color: white;
+}
+
+/*opciones de radio*/
+
+.opcionesida{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.destino{
+    display: flex;
+}
+
+.fechas{
+    display: flex;
+    flex-direction: column;
+}
+
+.calendario{
+    display: flex;
+}
+
+input{
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 25px;
+    background-color: #fff;
+}
+
+button{
+    background-color: #FA503F;
+    outline: 0;
+    border: 0;
+    border-radius: 24px;
+    text-align: center;
+    text-decoration: none;
+    width: 85px;
+    height: 40px;
+}
+
+/*Destinos*/
+
+.fondodestinos{
+    background-color: #EEEEEE;
+}
+
+.opcionesdestinos{
+    padding: 25px;
+}
+
+.lugares_visitar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+}
+.lugares{
+    background-color: aquamarine;
+    height: 150px;
+    width: 200px;
+}
+
+
