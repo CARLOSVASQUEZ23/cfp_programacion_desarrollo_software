@@ -1,35 +1,44 @@
-*{
+* {
     padding: 0;
     margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 
-.PrimerContenedor{
-    display:flex;
+.PrimerContenedor {
+    display: flex;
     justify-content: space-between;
 }
 
-.logo{
-    width: 400px;
-    height: 50px;
+.logo {
+    max-width: 400px;
+    max-height: 50px;
+    min-width: 400px;
+    min-height: 50px;
 }
 
-.despegar{
+.logo_pequenio {
+    display: none;
+}
+
+.despegar {
     width: 60%;
     height: 100%;
 }
 
-li{
-    list-style-type: none; 
+li {
+    list-style-type: none;
 }
 
 
-.UserSesion, ul, li{
+.UserSesion,
+ul,
+li {
     display: flex;
     margin: 3px;
 }
 
-.lista1{
+.lista1 {
     background-color: white;
     align-items: center;
     background-color: #EEE;
@@ -37,69 +46,78 @@ li{
     padding: 0px 24px;
 }
 
-.lista2{
+.lista2 {
     padding: 4px;
 
 }
 
 
-.menubajo{
+.menubajo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /*main*/
-main{
-    background-color: #A67FFE;
+main {
+    background-color: #DCD2F5;
     padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
-.opcionesviaje{
+.opcionesviaje {
     display: flex;
     gap: 5px;
 }
 
-.cuerpoformulario{
+.cuerpoformulario {
     background-color: #270570;
     border-radius: 24px;
     padding: 15px;
 }
 
-form{
+form {
     color: white;
+
 }
 
 /*opciones de radio*/
 
-.opcionesida{
+.opcionesida {
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 3rem;
+    padding-top: 15px;
 }
 
-.destino{
+.destino {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+
+
 }
 
-.fechas{
+.fechas {
     display: flex;
     flex-direction: column;
 }
 
-.calendario{
+.calendario {
     display: flex;
 }
 
-input{
+input {
     border: 1px solid #ccc;
     border-radius: 6px;
     height: 25px;
     background-color: #fff;
 }
 
-button{
+button {
     background-color: #FA503F;
     outline: 0;
     border: 0;
@@ -110,26 +128,92 @@ button{
     height: 40px;
 }
 
+.trip {
+    display: flex;
+    flex-direction: column;
+}
+
 /*Destinos*/
 
-.fondodestinos{
+.fondodestinos {
     background-color: #EEEEEE;
 }
 
-.opcionesdestinos{
+.opcionesdestinos {
     padding: 25px;
 }
 
-.lugares_visitar{
+.salir {
+    margin: 25px;
+}
+
+.lugares_visitar {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     gap: 1rem;
 }
-.lugares{
-    background-color: aquamarine;
-    height: 150px;
-    width: 200px;
+
+.lugares {
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    border-radius: 14px;
+
+}
+
+img {
+    width: 100%;
+    height: 70%;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.viajar {
+    padding: 5%;
 }
 
 
+/*Responsive*/
+
+@media screen and (max-width: 767px) {
+
+    .lista1 p{
+        display: none;
+    }
+
+    .lista2{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+    .cuerpoformulario,
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .opcionesida {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .destino {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lugares_visitar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .salir {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
