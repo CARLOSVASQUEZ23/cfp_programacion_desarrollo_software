@@ -51,6 +51,7 @@ select{
     background-color: transparent;
 }
 
+
 /*Cuerpo de la pagina*/
 
 .bosco{
@@ -137,6 +138,8 @@ main{
     .menu{
         display: block;
     }
+
+
 
 
     .informacion{
