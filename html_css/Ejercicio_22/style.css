@@ -185,9 +185,8 @@ img {
 @media screen and (max-width: 767px) {
 
     .PrimerContenedor{
-
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 30%);
     }
 
     .lista1 p{
@@ -202,6 +201,7 @@ img {
         margin-left: 15px;
         display: block;
     }
+
 
 
     .cuerpoformulario,
@@ -234,7 +234,16 @@ img {
 
 }
 
-@media screen and (min-width: 767px) and (max-width: 1023px){
+@media screen and (min-width: 767px) and (max-width: 1024px){
 
+    .cuerpoformulario{
+        width: 85vw;
+        margin-left: -5%;
+    }
+
+    .destino{
+        gap: 10px;
+    }
 }
+
 

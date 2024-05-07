@@ -51,11 +51,15 @@ select{
     background-color: transparent;
 }
 
+.tablet{
+    display: none;
+}
+
 
 /*Cuerpo de la pagina*/
 
 .bosco{
-    background-image: url(boscoengasado.png);
+    background-image: url(imagenes/boscoengasado.png);
     background-repeat: no-repeat;
     background-size: 30%;
     padding: 10%;
@@ -139,9 +143,11 @@ main{
         display: block;
     }
 
+    .botones{
+        display: block;
+    }
 
-
-
+    
     .informacion{
         display: flex;
         flex-direction: column;
@@ -164,15 +170,28 @@ main{
 
  }
 
- /* @media screen and ( min-width: 767px ) and (max-width: 1023px) {
+@media screen and ( min-width: 767px ) and (max-width: 1023px) {
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .op{
+        display: none;
+    }
+
+    .btn{
+        display: none;
+    }
+
     .primera{
-        position: absolute;
-        z-index: -1;
+        display: flex;
+        justify-content: flex-start;
     }
-    .segunda{
-        position: absolute;
-        z-index: -1;
+
+    .tablet{
+        display: block;
     }
- } */
-
-
+}
