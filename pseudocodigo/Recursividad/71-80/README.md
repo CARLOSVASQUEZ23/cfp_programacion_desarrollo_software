@@ -164,12 +164,28 @@
 <br>
 
 
-
 <h2>Ejercicio 78</h2>
 <h3>Torres de Hanoi</h3>
 <pre>
     <code>
-
+        Funcion resolverTorres(n, origen, destino, auxiliar)
+            Si n = 1 Entonces
+                Escribir "Mover disco de la torre ", origen, " a la torre ", destino
+            Sino
+                resolverTorres(n-1, origen, auxiliar, destino)
+                Escribir "Mover disco de la torre ", origen, " a la torre ", destino
+                resolverTorres(n-1, auxiliar, destino, origen)
+            FinSi
+        FinFuncion
+        Algoritmo principal
+            Definir discos, origen, destino, auxiliar como Entero
+            Escribir "Ingrese el número de discos:"
+            Leer discos
+            origen <- 1
+            destino <- 3
+            auxiliar <- 2
+            resolverTorres(discos, origen, destino, auxiliar)
+        FinAlgoritmo
     </code>
 </pre>
 <br>
@@ -220,7 +236,30 @@
 <h3>Generación de todas las permutaciones</h3>
 <pre>
     <code>
-
+        Funcion generarPermutaciones(lista, inicio, final)
+                Si inicio = final Entonces
+                    Escribir lista
+                Sino
+                    Para i <- inicio hasta final Hacer
+                        intercambiar(lista[inicio], lista[i])
+                        generarPermutaciones(lista, inicio + 1, final)
+                        intercambiar(lista[inicio], lista[i])
+                    FinPara
+                FinSi
+        FinFuncion
+        SubProceso intercambiar(a, b)
+            Temporal <- a
+            a <- b
+            b <- Temporal
+        FinSubProceso
+        Algoritmo principal
+            Definir lista como Caracter
+            Definir tamano como Entero
+            Escribir "Ingrese los elementos de la lista (separados por espacio):"
+            Leer lista
+            tamano <- Longitud(lista)
+            generarPermutaciones(lista, 0, tamano - 1)
+        FinAlgoritmo
     </code>
 </pre>
 <br>

@@ -1,7 +1,14 @@
-.giroContenedor {
+/* .giroContenedor {
     width: 100px;
     height: 100px;
     border: solid 1px black;
+} */
+
+
+.giroContenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 30px;
 }
 
 .Carta {
@@ -9,10 +16,11 @@
     height: 100px;
     transition: transform 1s;
     transform-style: preserve-3d;
+
 }
 
 
-.giroContenedor:hover .Carta {
+.Carta:hover {
     transform: rotateY(180deg);
 }
 
