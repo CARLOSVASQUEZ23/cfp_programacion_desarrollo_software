@@ -29,10 +29,12 @@ CREATE TABLE detalle_pedido(
     cantidad INTEGER,
     FOREIGN KEY (pedido_id) REFERENCES pedidos(id),
     FOREIGN KEY (producto_id) REFERENCES productos(id)
-)
+);
 
 
 
+
+--#INGRESAR DATOS
 INSERT INTO categorias VALUES(1,'limpieza');
 INSERT INTO categorias VALUES(2,'tecnologia');
 INSERT INTO categorias VALUES(3,'belleza');
@@ -91,3 +93,26 @@ INSERT INTO detalle_pedido VALUES(3,10,30);
 INSERT INTO detalle_pedido VALUES(4,11,2);
 INSERT INTO detalle_pedido VALUES(5,2,5);
 INSERT INTO detalle_pedido VALUES(6,7,60);
+
+SELECT * FROM productos;
+SELECT * FROM clientes;
+SELECT * FROM categorias;
+SELECT * FROM pedidos;
+SELECT * FROM detalle_pedido;
+
+--#2 devolver una lista de productos junto a la categoria
+
+SELECT productos.nombre, categorias.nombre
+FROM productos
+INNER JOIN categorias
+ON productos.categoria_id = categorias.id;
+
+--#3Mostrar el total gastado por el cliente
+SELECT clientes.nombre, productos.precio * detalle_pedido.cantidad
+FROM detalle_pedido
+    INNER JOIN pedidos 
+        ON detalle_pedido.pedido_id = pedidos.id
+    INNER JOIN productos 
+        ON detalle_pedido.producto_id = productos.id
+    INNER JOIN clientes
+        ON pedidos.cliente_id = clientes.id;
