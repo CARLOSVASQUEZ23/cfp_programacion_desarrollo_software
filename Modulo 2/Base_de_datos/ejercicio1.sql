@@ -116,3 +116,24 @@ FROM detalle_pedido
         ON detalle_pedido.producto_id = productos.id
     INNER JOIN clientes
         ON pedidos.cliente_id = clientes.id;
+
+--#4¿Cúal es el producto mas vendido?
+SELECT productos.nombre, detalle_pedido.cantidad
+FROM detalle_pedido
+INNER JOIN productos
+ON detalle_pedido.producto_id = productos.id
+WHERE detalle_pedido.cantidad = (SELECT MAX(cantidad)FROM detalle_pedido);
+
+--#5Mostrar un resumen de los pedidos
+SELECT pedido_id, clientes.nombre, productos.nombre, productos.precio, detalle_pedido.cantidad, (detalle_pedido.cantidad * productos.precio)
+FROM detalle_pedido
+INNER JOIN productos
+ON detalle_pedido.producto_id = productos.id
+INNER JOIN pedidos
+ON detalle_pedido.pedido_id = pedidos.id
+INNER JOIN clientes
+ON pedidos.cliente_id = clientes.id
+ORDER BY detalle_pedido.pedido_id
+
+--#6Isertar un nuevo pedido y acualizar stock
+INSERT INTO 
