@@ -27,20 +27,21 @@
         <!-- Barra de navegación -->
         <nav class="p-4">
             <div class="container mx-auto flex flex-row justify-evenly items-center px-24">
-                <div>
-                    <a href="#" class="text-white text-lg font-bold">RELAP</a>
+                <div class="flex items-center gap-4">
+                    <a href="#" class="text-white text-3xl font-bold">RELAP</a>
                     <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="50" />
                 </div>
-                <ul class="flex space-x-4 gap-8">
+                <ul class="flex gap-8 items-center">
                     <li><a href="#" class="text-white">Inicio</a></li>
                     <li><a href="#" class="text-white">Acerca</a></li>
                     <li><a href="#" class="text-white">Servicios</a></li>
                     <li><a href="#" class="text-white">Contacto</a></li>
+                    <li><a href="#" class="text-white">Ayuda</a></li>
                     <li>
-                        <div class="text-white w-20 flex justify-between">
-                            <i class="bi bi-heart"></i>
-                            <i class="bi bi-cart4"></i>
-                            <i class="bi bi-list"></i>
+                        <div class="text-white w-20 flex justify-between w-28">
+                            <div class="border border-1 p-1 border-white rounded-full size-8 flex justify-center"><i class="bi bi-heart"></i></div>
+                            <div class="border border-1 p-1 border-white rounded-full size-8 flex justify-center"><i class="bi bi-cart4"></i></div>
+                            <div class="border border-1 p-1 border-white rounded-full size-8 flex justify-center"><i class="bi bi-list"></i></div>
                         </div>
                     </li>
                 </ul>
@@ -103,7 +104,7 @@
 
         <section class="bg-white">
             <div class="flex flex-col items-center px-28 p-16">
-                <p>¡Suscríbete a nuestro Newsletter!</p>
+                <p>¡Registrate hoy mismo!</p>
                 <p>¿Eres un cliente nuevo? <a href="#" class="text-blue-500">Crea una cuenta aquí.</a></p>
                 <p class="px-28 flex flex-col items-center">Serás el primero en enterarte de nuestras novedades,
                     descuentos, lanzamientos y más.</p>
@@ -337,56 +338,201 @@
             </div>
         </section>
 
-        <section class="px-28 py-12">
-            <div class=" text-2xl font-bold flex flex-row justify-between">
-                <p>Auricular Logitech G635</p>
-                <p>12:17:08:42</p>
+
+        <section class="w-full h-my-custom-height bg-purple-200 flex flex-col justify-around px-28 py-12">
+            <div class="flex justify-between w-full">
+                <p class="text-5xl font-bold">DESCUENTOS</p>
+                <div class="flex gap-1 text-5xl font-bold">
+                    <p>12</p>
+                    <p>:</p>
+                    <p>17</p>
+                    <p>:</p>
+                    <p>08</p>
+                    <p>:</p>
+                    <p>42</p>
+                </div>
             </div>
 
-            <div class="flex flex-row justify-between">
-                <div class="shadow-2xl bg-white h-80 w-60 px-4 py-8">
-                    <p class="font-bold text-xl">Descripción</p>
-                    <div class="text-sm grid gap-2 h-full py-8">
-                        <p>Transductores de audio 40 mm</p>
-                        <p>Tiempo de uso 18 horas</p>
-                        <p>Puerto de carga USB-C</p>
-                        <p>Peso 165 gr</p>
-                        <p>Dimensiones 163×170×71 mm</p>
+            <div class="flex justify-between gap-5 w-full py-8">
+                <div class="bg-white h-80 w-64 flex justify-center pl-6 flex-col gap-8">
+                    <p class="text-3xl font-bold">Dimensiones</p>
+                    <ul class="grid gap-y-5 text-gray-400">
+                        <li class="font-bold text-black underline decoration-double decoration-purple-900 decoration-2">
+                            Color: negro</li>
+                        <li>Altura: 188 mm</li>
+                        <li>Ancho: 195 mm</li>
+                        <li>Peso (sin cable): 344 g</li>
+                        <li>Longitud de cable de PC: 2,8 m</li>
+                    </ul>
+                </div>
+                <div class="relative h-96 w-96">
+                    <div class="w-full h-full relative"><img class="w-full h-full"
+                            src="https://static.techspot.com/images/products/2020/pc-headset/org/2020-10-12-product-4.jpg"
+                            alt="">
                     </div>
+                    <div class="flex justify-center pt-5 font-bold text-white top-12 left-64 absolute text-2xl grid place-content-between bg-purple-400 rounded-full w-20
+                    h-20">-15%</div>
+                </div>
+                <div class="w-96 text-sm flex flex-col justify-evenly">
+                    <p class="text-2xl font-bold">Auricular Logitech G635.</p>
+                    <div class="flex items-end  gap-2">
+                        <p class="text-2xl font-bold">$159.00</p>
+                        <p class="line-through decoration-red-700 decoration-2">$299</p>
+                    </div>
+                    <p class="text-gray-400">
+                        Los transductores de audio PRO-G de 50 mm y DTS Headphone:X 2.01 crean espacios sonoros más
+                        expansivos, detallados e inmersivos. Completamente personalizables con G HUB—desde la
+                        iluminación RGB LIGHTSYNC a las teclas G y las preferencias de audio. 1 El sonido envolvente DTS
+                        Headphone:X 2.0 y los preajustes de ecualizador sólo están disponibles para Windows® y requieren
+                        el software para juegos Logitech G HUB.
+                    </p>
+
+                    <div>
+                        <div class="flex justify-between font-bold">
+                            <p>Vendido: 120</p>
+                            <p>Cantidad: 500</p>
+                        </div>
+                        <div class="flex">
+                            <div class="w-2/12 h-4 bg-purple-400"></div>
+                            <div class="w-10/12 h-4 bg-gray-400 "></div>
+                        </div>
+                    </div>
+                    <button class="rounded-full bg-purple-400 w-32 h-10 text-white font-bold">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-28 bg-white">
+            <div class="py-8 gap-4">
+                <p class="text-lg font-semibold mb-4">Consolas</p>
+                <p class="text-2xl font-bold">Play station</p>
+            </div>
+
+            <div class="flex flex-row justify-between gap-12">
+                <div class="bg-white w-4/12 shadow-2xl">
+                    <div class="w-full">
+                        <img src="https://th.bing.com/th/id/OIP.fb2n5lfL926RSZtAModV7QHaDp?rs=1&pid=ImgDetMain"
+                            alt="consola">
+                    </div>
+                    <div class="p-4">
+                        <p class="font-bold text-xl">play station 4</p>
+                        <p>$359.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white  w-4/12 shadow-2xl">
+                    <div class="w-full">
+                        <img src="https://th.bing.com/th/id/R.6a7fbd6c04d02e4b5f863afd91ff93d5?rik=4WeMjf3sMNTfTQ&pid=ImgRaw&r=0"
+                            alt="consola" class="h-40">
+                    </div>
+                    <div class="p-4">
+                        <p class="font-bold text-xl">play station 3</p>
+                        <p>$300.00</p>
+                    </div>
+                </div>
+
+                <div class="bg-white  w-4/12 shadow-2xl">
+                    <div class="w-full">
+                        <img src="https://www.lavanguardia.com/files/og_thumbnail/uploads/2020/06/11/5fa919f32a1e3.jpeg"
+                            alt="consola" class="h-40 w-full">
+                    </div>
+                    <div class="p-4">
+                        <p class="font-bold text-xl">play station 5</p>
+                        <p>$459.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-row justify-center text-4xl py-8 text-purple-400 gap-4">
+                <i class="bi bi-arrow-left-circle"></i>
+                <i class="bi bi-arrow-right-circle"></i>
+            </div>
+        </section>
+
+        <section class="px-28 py-12 flex flex-row justify-between bg-indigo-700">
+            <div class="w-96 text-white">
+                <p class="text-lg mb-4">¡Suscríbete a nuestro Newsletter!</p>
+                <p class="text-2xl font-bold mb-4">FORMA PARTE</p>
+                <p class="text-sm mb-4">Lo mejor en tecnología y computación. Variedad de marcas y productos con
+                    garantía y envío incluido.
+
+                </p>
+            </div>
+            <div class="flex flex-row gap-8 items-center">
+                <div>
+                    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="40" class="h-10 pl-6"
+                        placeholder="Ingresa tu correo" />
                 </div>
                 <div>
-                    <img src="https://th.bing.com/th/id/OIP.xUsvm8zAjBiZw1THsXnjkwHaHa?rs=1&pid=ImgDetMain"
-                        alt="auricular" class="h-4/5 w-full">
+                    <button class="bg-yellow-500 text-white font-bold py-2 px-4 rounded-full w-36">enviar</button>
                 </div>
-                <div class="bg-white h-full w-60">
-                    <div>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <p>$$$$</p>
-                    </div>
-                    <div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quo incidunt omnis odio
-                            doloribus laudantium pariatur eveniet, totam ipsa molestias architecto minus libero est
-                            voluptatibus. Nemo deserunt nobis quo maxime qui doloribus ab. Eveniet totam tempora eius
-                            numquam illo molestias ut quam. Nulla, repellendus mollitia!</p>
-                    </div>
-                    <div>
-                        <div>
-                            <p>vendido</p>
-                            <p>cantidad</p>
-                        </div>
-                        <div class="flex flex-row">
-                            <div class="w-4 h-1 bg-yellow-500"></div>
-                            <div class="w-4 h-1 bg-red-500"></div>
-                        </div>
-                    </div>
-                    <div>
-                        <button
-                            class="text-fuchsia-500 border border-fuchsia-500 font-bold py-2 px-4 rounded-full w-28">Comprar</button>
-                    </div>
+            </div>
+        </section>
+
+        <section class="bg-white py-12 px-28 flex flex-row justify-between">
+            <div>
+                <p class="font-bold my-2">Soporte</p>
+                <div class="text-gray-500 grid gap-2">
+                    <p>Blog</p>
+                    <p>Servicio técnico</p>
+                    <p>FAP</p>
+                </div>
+            </div>
+            <div>
+                <p class="font-bold my-2">Política</p>
+                <div class="text-gray-500 grid gap-2">
+                    <p>Envíos</p>
+                    <p>Mayoreo</p>
+                    <p>Garantías</p>
+                </div>
+            </div>
+            <div>
+                <p class="font-bold my-2">Empresa</p>
+                <div class="text-gray-500 grid gap-2">
+                    <p>Historia</p>
+                    <p>Ubicaciones</p>
+                    <p>Centro de servicio</p>
+                </div>
+            </div>
+            <div>
+                <p class="font-bold my-2">Mayoreo</p>
+                <div class="text-gray-500 grid gap-2">
+                    <p>Condiciones</p>
+                    <p>Página de mayoreo</p>
+                    <p>Entregas</p>
+                </div>
+            </div>
+            <div>
+                <p class="font-bold my-2">Mi perfil</p>
+                <div class="text-gray-500 grid gap-2">
+                    <p>Mis favoritos</p>
+                    <p>Mi cuenta</p>
+                    <p>Mis pedidos</p>
                 </div>
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="flex flex-row justify-between bg-white px-28 items-center text-fuchsia-500">
+            <div class="text-gray-500">
+                <p>
+                    Síguenos en nuestras redes
+                </p>
+            </div>
+            <div class="flex flex-row justify-between w-28 items-center">
+                <div class="border rounded-full border-fuchsia-500 h-8 w-8 flex items-center justify-center"><i class="bi bi-facebook"></i></div>
+                <div class="border rounded-full border-fuchsia-500 h-8 w-8 flex items-center justify-center"><i class="bi bi-instagram"></i></div>
+                <div class="border rounded-full border-fuchsia-500 h-8 w-8 flex items-center justify-center"><i class="bi bi-whatsapp"></i></div>
+            </div>
+
+            <div class="flex flex-row justify-between w-28 h-12 items-center text-fuchsia-500">
+                <div><i class="bi bi-paypal border border-1 p-1 border-fuchsia-500"></i></div>
+                <div><i class="bi bi-credit-card-2-back border border-1 py-1 px-2 border-fuchsia-500"></i></div>
+                <div><i class="bi bi-cash-coin border border-1 p-1 border-fuchsia-500"></i></div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
