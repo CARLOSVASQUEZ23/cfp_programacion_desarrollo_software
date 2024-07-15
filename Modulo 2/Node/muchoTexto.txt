@@ -1,0 +1,1 @@
+En Node.js los nuevos estándares de ECMAScript se pueden utilizar sin problemas, ya que no tienes que esperar a que todos tus usuarios actualicen sus navegadores: tú eres el encargado de decidir qué versión de ECMAScript usar cambiando la versión Node.js, y también puedes habilitar características experimentales específicas ejecutando Node.js con flags.
