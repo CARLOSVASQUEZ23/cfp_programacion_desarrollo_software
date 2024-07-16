@@ -44,3 +44,14 @@ const data = fs.readFileSync('texto.txt','utf-8');
 console.log(data);*/
 
 
+const promises = require('node:fs/promises')
+promises.readdir('C:/Users/carlosvasquez/Pictures')
+    .then((files) =>{
+        files.forEach((file) => {
+            console.log(file);
+        });
+    }).catch((err) => {
+        if(err) {
+            console.error(`Error reading directory: ${err}`);
+        }
+    });
