@@ -29,7 +29,7 @@ const {readFile} = require('node:fs/promises');
 
 //WAIT es una forma de volver Asincronico a sincronico o con orden.
 
-async function promesas (){
+/* async function promesas (){
     let data3 = await readFile('muchoTexto.txt', 'utf8')
     console.log(data3);
     console.log('-------');
@@ -41,6 +41,35 @@ async function promesas (){
     console.log('----1010');
 }
 
+promesas();*/
+
+
+
+//TRY and catch una forma de controlar errores
+try {
+
+}catch (err){
+    
+}
+
+
+async function promesas (){
+    try {
+        let data3 = await readFile('muchooTexto.txt', 'utf8')
+        console.log(data3);
+    } catch (err) {
+        console.log('Se produjo un error');
+    }
+
+    console.log('-------');
+    let data2 = readFile('text.txt', 'utf8')
+    console.log(data2);
+    console.log('----9090');
+    let data = await readFile('texto.txt', 'utf8')
+    console.log(data);
+    console.log('----1010');
+}
+
 promesas();
 
-
+//try no siempre controlara en general los errores lo mejor seria controlarlos por bloques.
