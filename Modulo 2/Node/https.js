@@ -1,0 +1,14 @@
+const { createServer } = requiere('node:http');
+
+const hostname = '192.168.52.40';
+const port = 1234;
+
+const server = createServer((req, res) => {
+    res.satatusCode = 200;
+    res.setHeader('Content-Type', 'text/plain');
+    res.end('Hello word')
+});
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${Port}`);
+})
