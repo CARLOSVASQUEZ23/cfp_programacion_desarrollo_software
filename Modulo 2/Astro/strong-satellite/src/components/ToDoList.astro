@@ -1,0 +1,190 @@
+<div class="flex h-screen bg-white">
+        <div class="flex-1 flex flex-col overflow-hidden">
+            <header class="flex justify-between items-center bg-blue-900 px-8 p-4">
+                <div>
+                    <img src="imagenes/rudy.png" alt="perfil" class="size-12 rounded-full">
+                </div>
+                <div>
+                    <label for="bus" class="block text-sm font-medium leading-6 text-gray-900"></label>
+                    <div class="mt-2">
+                        <input id="bus" name="buscador" type="search" size="125" required
+                            class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
+                    </div>
+                </div>
+                <div class="text-white text-2xl w-20">
+                    <i class="bi bi-brightness-high"></i>
+                </div>
+            </header>
+            <div class="flex h-full">
+                <nav class="flex w-72 bg-blue-950 p-4">
+                    <ul class="w-full">
+                        <li class="mb-4 text-white border-b-2">
+                            <p>Pendientes</p>
+                        </li>
+                        <li class="mb-4 text-white border-b-2">
+                            <p>Realizadas</p>
+                        </li>
+                        <li class="mb-4 text-white border-b-2">
+                            <p>Categorias</p>
+                        </li>
+                    </ul>
+                </nav>
+
+                <main class="flex flex-col w-full">
+                    <div class="flex flex-row justify-between w-full  h-20 bg-white items-end px-6">
+                        <div>
+                            <button class="w-40 h-12 bg-sky-700 rounded-t-lg hover:bg-sky-400 text-white">Todo</button>
+                            <button class="w-40 h-12 bg-sky-700 rounded-t-lg hover:bg-sky-400 text-white">Dia</button>
+                            <button class="w-40 h-12 bg-sky-700 rounded-t-lg hover:bg-sky-400 text-white">Mes</button>
+                            <button class="w-40 h-12 bg-sky-700 rounded-t-lg hover:bg-sky-400 text-white">Anio</button>
+                        </div>
+                        <div class="w-44 h-20 flex justify-between items-end mr-4">
+                            <button class="w-20 h-8 bg-gray-500 rounded text-white hover:bg-sky-700">Fecha</button>
+                            <button class="w-20 h-8 bg-gray-500 rounded text-white hover:bg-sky-700">Hora</button>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full h-5/6 bg-white overflow-y-auto mb-14">
+                        <div class="flex  w-full mx-auto px-6">
+                            <div class="flex flex-col w-full h-full text-gray-900 text-xl grid gap-4">
+                                <div class="flex flex-col w-full  h-36 bg-white py-4 px-8 shadow-2xl">
+                                    <div class="flex justify-between w-full">
+                                        <p class="py-2 font-bold">Aprender Ingles</p>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="flex flex-row justify-between w-40">
+                                            <p>9:45 am - 10:15 am</p>
+                                            <p class="text-gray-400">Diario</p>
+                                        </div>
+                                        <p>Tomar una revista, o visitar una página web que este en ingles, Tomar nota de
+                                            nuevas palabras y buscar su pronunciación.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row justify-end">
+                                        <ul class="flex flex-row justify-between w-44">
+                                            <li><i class="bi bi-pencil-fill"></i></li>
+                                            <li><i class="bi bi-people-fill"></i></li>
+                                            <li><i class="bi bi-calendar"></i></li>
+                                            <li><i class="bi bi-trash-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full  h-36 bg-white py-4 px-8 shadow-2xl">
+                                    <div class="flex justify-between w-full">
+                                        <p class="py-2 font-bold">Salir a correr</p>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="flex flex-row justify-between w-40">
+                                            <p>6:45 am - 8:00 am</p>
+                                            <p class="text-gray-400">Diario</p>
+                                        </div>
+                                        <p>Correr 2k antes de las 8:00.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row justify-end">
+                                        <ul class="flex flex-row justify-between w-44">
+                                            <li><i class="bi bi-pencil-fill"></i></li>
+                                            <li><i class="bi bi-people-fill"></i></li>
+                                            <li><i class="bi bi-calendar"></i></li>
+                                            <li><i class="bi bi-trash-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full  h-36 bg-white py-4 px-8 shadow-2xl">
+                                    <div class="flex justify-between w-full">
+                                        <p class="py-2 font-bold">Terminar la casa del árbol</p>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <p class="text-gray-400">#Agendar</p>
+                                        <p>Ir a comprar el resto de tablas a la ferreteria para terminar de construir la casita del árbol.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row justify-end">
+                                        <ul class="flex flex-row justify-between w-44">
+                                            <li><i class="bi bi-pencil-fill"></i></li>
+                                            <li><i class="bi bi-people-fill"></i></li>
+                                            <li><i class="bi bi-calendar"></i></li>
+                                            <li><i class="bi bi-trash-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full  h-36 bg-white py-4 px-8 shadow-2xl">
+                                    <div class="flex justify-between w-full">
+                                        <p class="py-2 font-bold">Terminar el libro de JavaScript</p>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="flex flex-row justify-between w-40">
+                                            <p>Diciembre</p>
+                                            <p class="text-gray-400">#pendiente</p>
+                                        </div>
+                                        <p>El profesor Dario dejó el libro de JavaScript, pero personalmente debo terminarlo antes de que acabe el año.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row justify-end">
+                                        <ul class="flex flex-row justify-between w-44">
+                                            <li><i class="bi bi-pencil-fill"></i></li>
+                                            <li><i class="bi bi-people-fill"></i></li>
+                                            <li><i class="bi bi-calendar"></i></li>
+                                            <li><i class="bi bi-trash-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full  h-36 bg-white py-4 px-8 shadow-2xl">
+                                    <div class="flex justify-between w-full">
+                                        <p class="py-2 font-bold">Conseguir furina C6</p>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="flex flex-row justify-between w-40">
+                                            <p>8:00 pm - 9:15 am</p>
+                                            <p class="text-gray-400">Diario</p>
+                                        </div>
+                                        <p>Hacer las misiones diarias, gastar la resina y conseguir la bendición lunar.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row justify-end">
+                                        <ul class="flex flex-row justify-between w-44">
+                                            <li><i class="bi bi-pencil-fill"></i></li>
+                                            <li><i class="bi bi-people-fill"></i></li>
+                                            <li><i class="bi bi-calendar"></i></li>
+                                            <li><i class="bi bi-trash-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full  h-40 bg-white py-4 px-8 shadow-2xl">
+                                    <div class="flex justify-between w-full">
+                                        <p class="py-2 font-bold">Desinstalar Dota 2</p>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="text-sm">
+                                        <div class="flex flex-row justify-between w-40">
+                                            <p>6:00 pm</p>
+                                            <p class="text-gray-400">Hoy</p>
+                                        </div>
+                                        <p>Ya inverti casi 7mil horas de juego y no soy bueno, si o si tengo que desinstalar el juego.
+                                        </p>
+                                    </div>
+                                    <div class="flex flex-row justify-end">
+                                        <ul class="flex flex-row justify-between w-44">
+                                            <li><i class="bi bi-pencil-fill"></i></li>
+                                            <li><i class="bi bi-people-fill"></i></li>
+                                            <li><i class="bi bi-calendar"></i></li>
+                                            <li><i class="bi bi-trash-fill"></i></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <nav class="flex justify-center items-end w-40 h-5/6 bg-white ">
+                    <button class="size-16 bg-blue-600 flex justify-center items-center rounded-full text-white">
+                        <p class="text-2xl">+</p>
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </div>

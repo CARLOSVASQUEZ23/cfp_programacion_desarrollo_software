@@ -1,7 +1,7 @@
 {
-  "name": "ejercicio1npm",
+  "name": "todolist",
   "version": "1.0.0",
-  "description": "aprendiendo npm",
+  "description": "EjemplodelTodoList",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,15 +10,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CARLOSVASQUEZ23"
+    "url": "http://github.com/CARLOSVASQUEZ23"
   },
-  "author": "Carlos Vasquez",
+  "author": "Carlos vasquez",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "3.1.4"
-  },
   "dependencies": {
-    "colors": "1.4.0",
-    "express": "4.19.2"
+    "express": "4.19.2",
+    "oracledb": "6.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "3.1.4",
+    "standard": "17.1.0"
   }
 }

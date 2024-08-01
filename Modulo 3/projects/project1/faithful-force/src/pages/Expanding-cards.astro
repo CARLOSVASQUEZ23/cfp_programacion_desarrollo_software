@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ExpandingCard from "../components/ExpandingCard.astro";
+---
+
+<Layout title="Welcome to Astro.">
+   <div class="flex h-screen w-full p-6 gap-6">
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://th.bing.com/th/id/R.f7d1b13c4b72cbfd9a820abea78fd2e2?rik=6W%2bZUSRxPA5MLg&pid=ImgRaw&r=0"
+         />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://revistasumma.com/wp-content/uploads/2016/07/Guatemala--scaled.jpg"
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://outpostmagazine.com/wp-content/uploads/2017/08/guatemala-sumak-tour.jpg"
+         
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://th.bing.com/th/id/R.f0935f793b800ca95dbe2d1d33185874?rik=3JrneuJctF8eiw&riu=http%3a%2f%2fwww.comiendonoselmundo.com%2fwp-content%2fuploads%2f2015%2f01%2fimage44.jpg&ehk=Z59%2bx%2bo46JCiH6JRrgRjXBejKOgHzZWcjCVE0qdrCP8%3d&risl=&pid=ImgRaw&r=0"
+         
+      />
+      <ExpandingCard
+         title="Paisaje de Guatemala 1"
+         ,
+         image="https://wallpapercave.com/wp/wp3948170.jpg"
+         
+      />
+   </div>
+</Layout>
+
+<script>
+   const carta = document.getElementsByClassName("carta");
+   Array.from(carta)[0].classList.toggle("!w-2/3");
+   Array.from(carta)[0].children[0].classList.toggle("!block");
+
+   Array.from(carta).forEach((element) => {
+      element.addEventListener("click", () => {
+         removeActiveClasses();
+         element.classList.toggle("!w-2/3");
+         element.children[0].classList.toggle("!block");
+      });
+   });
+
+   function removeActiveClasses() {
+      Array.from(carta).forEach((element) => {
+         element.classList.remove("!w-2/3");
+         element.children[0].classList.remove("!block");
+      });
+   }
+</script>
+
+
+
