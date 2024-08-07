@@ -1,6 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Welcome to Astro.">
@@ -46,14 +46,32 @@ import Card from '../components/Card.astro';
 				body="Supercharge your project with new frameworks and libraries."
 			/>
 			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				href="rotating-navigation-animation"
+				title="Rotaciones basicas"
+				body=""
 			/>
 			<Card
-				href="https://astro.build/chat/"
+				href="hidden-search-widget"
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
+			/>
+
+			<Card
+				href="burry-loading"
+				title="Pantalla de carga"
+				body="❤️"
+			/>
+
+			<Card
+			href="scroll-animation"
+			title="Efecto del Scroll"
+			body="❤️"
+			/>
+
+			<Card
+			href="split-landing-page"
+			title="Deslisamiento de secciones"
+			body="❤️"
 			/>
 		</ul>
 	</main>
@@ -95,7 +113,10 @@ import Card from '../components/Card.astro';
 	.instructions {
 		margin-bottom: 2rem;
 		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
 		padding: 1.5rem;
 		border-radius: 8px;
 	}
