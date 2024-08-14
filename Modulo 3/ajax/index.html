@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <div id="demo">
+        <h2>Let AJAX change this text</h2>
+        <button type="button" onclick="loadDoc()">Change Content</button>
+    </div> -->
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            margin-top: 40px;
+            width: 250px;
+            height: 300px;
+            background-color: rgb(235, 160, 160);
+            border-radius: 10%;
+        }
+
+        .uno {
+            width: 100%;
+            height: 80%;
+        }
+
+        #imagen {
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .dos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 10%;
+        }
+
+        #codigo {
+            height: 100%;
+            width: 60px;
+            background-color: rgb(211, 211, 211);
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+            color: rgb(112, 2, 112);
+        }
+
+        #nombre {
+            height: 100%;
+            width: 100px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            color: rgb(92, 22, 22);
+
+        }
+    </style>
+
+
+    <div class="card">
+        <div class="uno">
+            <div id="imagen"></div>
+        </div>
+
+        <div class="dos">
+            <div id="codigo"></div>
+            <div id="nombre"></div>
+        </div>
+    </div>
+
+    <script>
+        // function loadDoc(){
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function () {
+            const data = JSON.parse(this.responseText)
+            console.log(data);
+            document.getElementById("nombre").innerHTML = data.name;
+            document.getElementById("codigo").innerHTML = data.id;
+            document.getElementById("imagen").style.backgroundImage = `url(${data.sprites.front_default})`;
+            console.log(data.sprites.front_default);
+        }
+        xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon/70", true)
+        xhttp.send();
+        // }
+
+        const xhttp2 = new XMLHttpRequest();
+        xhttp.onload = function () {
+            const data = JSON.parse(this.responseText);
+            const todo = "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1302"
+            console.log(todo);
+
+            Array.from(todo).forEach(element => {
+            });
+        };
+
+        xhttp.open("GET", "https://pokeapi.co/api/v2/pokemon?offset=0&limit=1302", true);
+        xhttp.send();
+
+
+
+    </script>
+</body>
+
+</html>

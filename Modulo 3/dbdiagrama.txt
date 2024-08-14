@@ -1,0 +1,57 @@
+Table Inscripciones{
+  id integer [primary key]
+  id_encargado integer
+}
+
+Table Encargados {
+  id integer
+  nombre varchar
+  telefono number
+  correo varchar2
+  direccion varchar
+}
+
+Table Estudiantes {
+  id integer [primary key]
+  nombre varchar
+  telefono varchar
+  correo varchar
+  id_encargado varchar
+  id_profesor varchar
+}
+
+Table Profesor {
+  id integer [primary key]
+  nombre varchar
+  direccion varchar
+  correo varchar
+  telefono number
+}
+
+Table Curso {
+  id integer [primary key]
+  nombre varchar
+}
+
+Table Horarios {
+  id integer
+  duracion timestamp
+}
+
+Table Calificaciones{
+  id integer [primary key]
+  id_estudiante integer
+  nota number
+}
+
+Ref: Encargados.id - Estudiantes.id_encargado
+
+Ref: Estudiantes.id - Curso.id
+
+Ref: Curso.id <> Profesor.id
+
+Ref: Curso.id <> Horarios.id
+
+Ref: Inscripciones.id_encargado - Encargados.id
+
+Ref: Calificaciones.id_estudiante > Estudiantes.id

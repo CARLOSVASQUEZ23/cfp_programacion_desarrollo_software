@@ -3,13 +3,16 @@
         id="menu-burguer"
         class="flex gap-4 flex-col justify-center items-end z-10 h-48 w-48 bg-orange-500 rounded-full fixed -top-20 -left-20"
     >
-        <img
+        <!-- <img
             id="hidden-nav"
             class="hidden-nav size-20"
             src="images/burguer.webp"
             alt="Burguer Icon"
-        />
-        <img class="size-20" src="images/burguer.webp" alt="Burguer Icon" />
+        /> -->
+        <i class="bi bi-x-lg hidden-nav size-20 text-4xl" id="hidden-nav" ></i>
+
+        <i class="bi bi-list size-20 text-4xl"></i>
+        <!-- <img class="size-20" src="/public/images/burguer.webp" alt="Burguer Icon" /> -->
     </div>
     <nav
         id="nav-menu"
@@ -79,3 +82,9 @@
         });
     }
 </script>
+
+<style>
+    div{
+        transition: all 2s;
+    }
+</style>
