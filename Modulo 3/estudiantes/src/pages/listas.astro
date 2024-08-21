@@ -1,0 +1,49 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Lista from "../components/ListaEstudiantes.astro";
+import JsonEstudiantes from "../../estudiante.json"
+
+export interface Root {
+  id: number
+  nombre: string
+  curso: string
+  materiales: string[]
+}
+
+const dato = JsonEstudiantes as Root;
+console.log(dato.id);
+console.log(dato.nombre);
+---
+
+<Layout title="Welcome to Astro.">
+    <div class="w-screen h-screen bg-white p-0">
+        <Lista >
+    </div>
+</Layout>
+
+
+<script>
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <script>
+fetch('estudiante.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+  });
+</script> -->
