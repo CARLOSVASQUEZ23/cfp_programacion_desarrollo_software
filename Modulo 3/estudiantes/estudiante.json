@@ -1,7 +1,5 @@
 {
     "id": 1,
     "nombre": "Juan Pérez",
-    "curso": "Programación Web",
-    "materiales": ["HTML", "CSS", "JavaScript"]
+    "curso": "Programación Web"
 }
-

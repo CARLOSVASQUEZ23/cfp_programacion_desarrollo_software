@@ -1,49 +1,60 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Lista from "../components/ListaEstudiantes.astro";
-import JsonEstudiantes from "../../estudiante.json"
+import * as JsonEstudiantes from "../../estudiante.json";
 
-export interface Root {
-  id: number
-  nombre: string
-  curso: string
-  materiales: string[]
+export interface Estudiante {
+  id: number;
+  nombre: string;
+  curso: string;
 }
 
-const dato = JsonEstudiantes as Root;
-console.log(dato.id);
-console.log(dato.nombre);
+const dato = JsonEstudiantes as Estudiante;
+const estudiantes: String[] = [
+  dato.nombre,
+  dato.nombre,
+  dato.nombre,
+  dato.nombre,
+  dato.nombre,
+];
+console.log(estudiantes);
+
+for (let i = 0; i < estudiantes.length; i++) {
+  const element = estudiantes[i];
+  console.log(element);
+}
 ---
 
 <Layout title="Welcome to Astro.">
-    <div class="w-screen h-screen bg-white p-0">
-        <Lista >
-    </div>
+  <div class="w-screen h-screen bg-white p-4">
+    <table class="estudiantes-table border-2">
+      <thead>
+        <tr>
+          <th>Estudiantes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Estudiante 1</td>
+        </tr>
+
+        <tr>
+          <td>Estudiante 2</td>
+        </tr>
+
+        <tr>
+          <td>Estudiante 3</td>
+        </tr>
+
+        <tr>
+          <td>Estudiante 4</td>
+        </tr>
+
+        <tr>
+          <td>Estudiante 5</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </Layout>
 
-
-<script>
-</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <script>
-fetch('estudiante.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log(data);
-  });
-</script> -->
